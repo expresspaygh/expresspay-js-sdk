@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "target": "es2017",
+    "pretty": true,
+    "outDir": "build",
+    "lib": ["es2015","dom"],
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node","sprintf-js"],
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "build"
+  ]
+}

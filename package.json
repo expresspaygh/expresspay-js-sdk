@@ -1,0 +1,35 @@
+{
+  "name": "expresspay-js-sdk",
+  "version": "1.0.0",
+  "description": "A simple library for JavaScript integrators",
+  "main": "build/MerchantApi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/expresspaygh/expresspay-js-sdk.git"
+  },
+  "keywords": [
+    "payment",
+    "ghana",
+    "expresspay",
+    "ghana",
+    "visa",
+    "ghana"
+  ],
+  "author": "Jeffery Osei <jefferyosei.expresspaygh.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/expresspaygh/expresspay-js-sdk/issues"
+  },
+  "homepage": "https://github.com/expresspaygh/expresspay-js-sdk#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "sprintf-js": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.22",
+    "@types/sprintf-js": "^1.1.2"
+  }
+}
