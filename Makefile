@@ -2,6 +2,10 @@
 build:
 	tsc
 
+## test: Run package test cases
+test:
+	npm test
+
 ## help: Command to view help
 help: Makefile
 	@echo
