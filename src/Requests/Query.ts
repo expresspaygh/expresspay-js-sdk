@@ -22,7 +22,7 @@ export default class QueryInvoice
    * @type {object}
    * @memberof QueryInvoice
    */
-  private makeResult: object;
+  private makeResult: object = {};
   /**
    *
    *
@@ -62,10 +62,11 @@ export default class QueryInvoice
     }
 
     try {
+      
       Object.assign(this.makeResult, {"merchant-id": this.config.getMerchantId()});
       Object.assign(this.makeResult, {"api-key": this.config.getMerchantKey()});
-
       Object.assign(this.makeResult, {"token": this.request.token});
+
     } catch(e) {
       throw new Error(e.message);
     }

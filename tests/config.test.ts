@@ -1,7 +1,7 @@
 // imports
-import Config from '../src/Utility/Config';
-import { describe, it } from 'mocha';
 import { expect } from 'chai';
+import { describe, it } from 'mocha';
+import Config from '../src/Utility/Config';
 
 // Init config setup
 let config = new Config("089237783227", "JKR91Vs1zEcuAj9LwMXQu-H3LPrDq1XCKItTKpmLY1-XsBgCnNpkDT1GER8ih9f-UTYoNINatMbreNIRavgu-89wPOnY6F7mz1lXP3LZ");

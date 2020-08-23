@@ -22,7 +22,7 @@ export default class SubmitInvoice
    * @type {object}
    * @memberof SubmitInvoice
    */
-  private makeResult: object;
+  private makeResult: object = {};
   /**
    *
    *
@@ -62,6 +62,7 @@ export default class SubmitInvoice
     }
 
     try {
+      
       Object.assign(this.makeResult, {"merchant-id": this.config.getMerchantId()});
       Object.assign(this.makeResult, {"api-key": this.config.getMerchantKey()});
 
