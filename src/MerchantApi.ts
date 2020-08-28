@@ -39,7 +39,7 @@ export default class MerchantApi
    * @type {string}
    * @memberof MerchantApi
    */
-  private base_url: string;
+  private base_url!: string;
   /**
    *
    *

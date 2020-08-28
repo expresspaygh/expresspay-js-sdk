@@ -11,6 +11,8 @@
     "typeRoots": ["node_modules/@types"],
     "types": ["node","sprintf-js"],
     "declaration": true,
+    "esModuleInterop": true,
+    "strict": true,
   },
   "include": [
     "src/**/*"

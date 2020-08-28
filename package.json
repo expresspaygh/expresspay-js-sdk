@@ -4,7 +4,9 @@
   "description": "A simple library for JavaScript integrators",
   "main": "build/MerchantApi.js",
   "types": "build/MerchantApi.d.ts",
+  "prepublish": "tsc",
   "scripts": {
+    "build": "tsc",
     "test": "./node_modules/mocha/bin/mocha --reporter spec --recursive --require ts-node/register './tests/**/*.test.ts'"
   },
   "repository": {
