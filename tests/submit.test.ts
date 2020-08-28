@@ -4,8 +4,13 @@ import { describe, it } from 'mocha';
 import Config from '../src/Utility/Config';
 import Submit from '../src/Requests/Submit';
 
+// Init keys
+let merchant_id = "089237783227";
+let merchant_key = "JKR91Vs1zEcuAj9LwMXQu-H3LPrDq1XCKItTKpmLY1-XsBgCnNpkDT1GER8ih9f-UTYoNINatMbreNIRavgu-89wPOnY6F7mz1lXP3LZ";
+
+
 // Init config setup
-let config = new Config("089237783227", "JKR91Vs1zEcuAj9LwMXQu-H3LPrDq1XCKItTKpmLY1-XsBgCnNpkDT1GER8ih9f-UTYoNINatMbreNIRavgu-89wPOnY6F7mz1lXP3LZ");
+let config = new Config(merchant_id, merchant_key);
 
 // submit request
 let request = {

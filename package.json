@@ -4,7 +4,7 @@
   "description": "A simple library for JavaScript integrators",
   "main": "build/MerchantApi.js",
   "scripts": {
-    "test": "mocha --reporter spec --require ts-node/register tests/*.test.ts"
+    "test": "./node_modules/mocha/bin/mocha --reporter spec --recursive --require ts-node/register './tests/**/*.test.ts'"
   },
   "repository": {
     "type": "git",

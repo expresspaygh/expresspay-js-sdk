@@ -118,8 +118,10 @@ export default class MerchantApi
    */
   public async submit(currency: string, amount: number, order_id: string, order_desc: string, redirect_url: string, account_number: string, order_img_url: string | null, first_name: string | null, last_name: string | null, phone_number: string | null, email: string | null) : Promise<any>
   {
-    try {
+    let responseData : any = "";
 
+    try {
+      
       const querystring = require('querystring');
       
       this.request = {
@@ -146,7 +148,7 @@ export default class MerchantApi
         
         if (response.status === 200 && response.statusText === "OK")
         {
-          return response.data;
+          responseData = response.data;
         } else {
           throw new Error(`Something bad happened: ${response.data}`);
         }
@@ -166,6 +168,11 @@ export default class MerchantApi
       throw new Error(e.message);
     }
 
+    if (responseData)
+    {
+      return responseData;
+    }
+    
     throw new Error("Something bad happened, kindly try again");
   }
 
@@ -194,6 +201,8 @@ export default class MerchantApi
    */
   public async query(token: string) : Promise<any>
   {
+    let responseData : any = "";
+
     try {
 
       const querystring = require('querystring');
@@ -212,7 +221,7 @@ export default class MerchantApi
         
         if (response.status === 200 && response.statusText === "OK")
         {
-          return response.data;
+          responseData = response.data;
         } else {
           throw new Error(`Something bad happened: ${response.data}`);
         }
@@ -230,6 +239,11 @@ export default class MerchantApi
 
     } catch (e) {
       throw new Error(e.message);
+    }
+
+    if (responseData)
+    {
+      return responseData;
     }
 
     throw new Error("Something bad happened, kindly try again");
