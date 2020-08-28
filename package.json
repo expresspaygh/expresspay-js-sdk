@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A simple library for JavaScript integrators",
   "main": "build/MerchantApi.js",
+  "types": "build/MerchantApi.d.ts",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --reporter spec --recursive --require ts-node/register './tests/**/*.test.ts'"
   },

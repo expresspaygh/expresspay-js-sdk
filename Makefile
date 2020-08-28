@@ -1,5 +1,5 @@
 ## build: Build from typescript to JS
-build:
+build-tsc:
 	tsc
 
 ## test: Run package test cases
