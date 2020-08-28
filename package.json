@@ -5,6 +5,9 @@
   "main": "build/MerchantApi.js",
   "types": "build/MerchantApi.d.ts",
   "prepublish": "tsc",
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/" 
+  },
   "scripts": {
     "build": "tsc",
     "test": "./node_modules/mocha/bin/mocha --reporter spec --recursive --require ts-node/register './tests/**/*.test.ts'"
