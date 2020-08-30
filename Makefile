@@ -4,7 +4,11 @@ build-tsc:
 
 ## test: Run package test cases
 test:
-	npm test
+	npm run-script test
+
+## publish: Publish package to github npm
+publish:
+	npm publish
 
 ## help: Command to view help
 help: Makefile
