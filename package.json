@@ -1,5 +1,5 @@
 {
-  "name": "expresspay-js-sdk",
+  "name": "@expresspaygh/expresspay-js-sdk",
   "version": "1.0.0",
   "description": "A simple library for JavaScript integrators",
   "main": "build/MerchantApi.js",
